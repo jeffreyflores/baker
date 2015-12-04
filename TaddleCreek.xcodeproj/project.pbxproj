@@ -425,18 +425,11 @@
 		ABAFB57E15AB9A2E002FA498 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-<<<<<<< HEAD:TaddleCreek.xcodeproj/project.pbxproj
 				LastUpgradeCheck = 0630;
 				TargetAttributes = {
 					ABAFB58615AB9A2E002FA498 = {
-						DevelopmentTeam = D98EH4D5B2;
-=======
-				LastUpgradeCheck = 0600;
-				TargetAttributes = {
-					ABAFB58615AB9A2E002FA498 = {
 						DevelopmentTeam = ZQHW9782PS;
->>>>>>> 31c237c0262c3f765b61b557289c881afd82b6c5:TaddleCreek.xcodeproj/project.pbxproj
-					};
+                    };
 				};
 			};
 			buildConfigurationList = ABAFB58115AB9A2E002FA498 /* Build configuration list for PBXProject "TaddleCreek" */;
