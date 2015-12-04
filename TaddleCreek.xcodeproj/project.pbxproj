@@ -113,13 +113,13 @@
 		ABABF1A51646C04D00A75E67 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		ABADF3F716C7BAD900F52F3C /* NSURL+BakerExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+BakerExtensions.h"; sourceTree = "<group>"; };
 		ABADF3F816C7BAD900F52F3C /* NSURL+BakerExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+BakerExtensions.m"; sourceTree = "<group>"; };
-		ABAFB58715AB9A2E002FA498 /* Baker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABAFB58715AB9A2E002FA498 /* TaddleCreek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaddleCreek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAFB58B15AB9A2E002FA498 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ABAFB58D15AB9A2E002FA498 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ABAFB58F15AB9A2E002FA498 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		ABAFB59315AB9A2E002FA498 /* Baker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Baker-Info.plist"; sourceTree = "<group>"; };
+		ABAFB59315AB9A2E002FA498 /* TaddleCreek-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaddleCreek-Info.plist"; sourceTree = "<group>"; };
 		ABAFB59715AB9A2E002FA498 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ABAFB59915AB9A2E002FA498 /* Baker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Baker-Prefix.pch"; sourceTree = "<group>"; };
+		ABAFB59915AB9A2E002FA498 /* TaddleCreek-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaddleCreek-Prefix.pch"; sourceTree = "<group>"; };
 		ABAFB59A15AB9A2E002FA498 /* BKRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKRAppDelegate.h; sourceTree = "<group>"; };
 		ABAFB59B15AB9A2E002FA498 /* BKRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKRAppDelegate.m; sourceTree = "<group>"; };
 		ABC270CF1616F3CB00AD97E9 /* BKRIssuesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKRIssuesManager.h; sourceTree = "<group>"; };
@@ -336,7 +336,7 @@
 		ABAFB58815AB9A2E002FA498 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABAFB58715AB9A2E002FA498 /* Baker.app */,
+				ABAFB58715AB9A2E002FA498 /* TaddleCreek.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -376,9 +376,9 @@
 			isa = PBXGroup;
 			children = (
 				20CC551F16AD346900DEFB5C /* Localizable.strings */,
-				ABAFB59315AB9A2E002FA498 /* Baker-Info.plist */,
+				ABAFB59315AB9A2E002FA498 /* TaddleCreek-Info.plist */,
 				ABAFB59715AB9A2E002FA498 /* main.m */,
-				ABAFB59915AB9A2E002FA498 /* Baker-Prefix.pch */,
+				ABAFB59915AB9A2E002FA498 /* TaddleCreek-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -402,9 +402,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ABAFB58615AB9A2E002FA498 /* Baker */ = {
+		ABAFB58615AB9A2E002FA498 /* TaddleCreek */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABAFB5B415AB9A2F002FA498 /* Build configuration list for PBXNativeTarget "Baker" */;
+			buildConfigurationList = ABAFB5B415AB9A2F002FA498 /* Build configuration list for PBXNativeTarget "TaddleCreek" */;
 			buildPhases = (
 				ABAFB58315AB9A2E002FA498 /* Sources */,
 				ABAFB58415AB9A2E002FA498 /* Frameworks */,
@@ -414,9 +414,9 @@
 			);
 			dependencies = (
 			);
-			name = Baker;
+			name = TaddleCreek;
 			productName = Baker;
-			productReference = ABAFB58715AB9A2E002FA498 /* Baker.app */;
+			productReference = ABAFB58715AB9A2E002FA498 /* TaddleCreek.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -425,14 +425,21 @@
 		ABAFB57E15AB9A2E002FA498 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+<<<<<<< HEAD:TaddleCreek.xcodeproj/project.pbxproj
 				LastUpgradeCheck = 0630;
 				TargetAttributes = {
 					ABAFB58615AB9A2E002FA498 = {
 						DevelopmentTeam = D98EH4D5B2;
+=======
+				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					ABAFB58615AB9A2E002FA498 = {
+						DevelopmentTeam = ZQHW9782PS;
+>>>>>>> 31c237c0262c3f765b61b557289c881afd82b6c5:TaddleCreek.xcodeproj/project.pbxproj
 					};
 				};
 			};
-			buildConfigurationList = ABAFB58115AB9A2E002FA498 /* Build configuration list for PBXProject "Baker" */;
+			buildConfigurationList = ABAFB58115AB9A2E002FA498 /* Build configuration list for PBXProject "TaddleCreek" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -444,7 +451,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABAFB58615AB9A2E002FA498 /* Baker */,
+				ABAFB58615AB9A2E002FA498 /* TaddleCreek */,
 			);
 		};
 /* End PBXProject section */
@@ -603,11 +610,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Baker/Baker-Prefix.pch";
-				INFOPLIST_FILE = "Baker/Baker-Info.plist";
+				GCC_PREFIX_HEADER = "Baker/TaddleCreek-Prefix.pch";
+				INFOPLIST_FILE = "Baker/TaddleCreek-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TaddleCreek;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -619,11 +627,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Baker/Baker-Prefix.pch";
-				INFOPLIST_FILE = "Baker/Baker-Info.plist";
+				GCC_PREFIX_HEADER = "Baker/TaddleCreek-Prefix.pch";
+				INFOPLIST_FILE = "Baker/TaddleCreek-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TaddleCreek;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -632,7 +641,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ABAFB58115AB9A2E002FA498 /* Build configuration list for PBXProject "Baker" */ = {
+		ABAFB58115AB9A2E002FA498 /* Build configuration list for PBXProject "TaddleCreek" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABAFB5B215AB9A2F002FA498 /* Debug */,
@@ -641,7 +650,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABAFB5B415AB9A2F002FA498 /* Build configuration list for PBXNativeTarget "Baker" */ = {
+		ABAFB5B415AB9A2F002FA498 /* Build configuration list for PBXNativeTarget "TaddleCreek" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABAFB5B515AB9A2F002FA498 /* Debug */,
