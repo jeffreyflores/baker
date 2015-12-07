@@ -11,15 +11,17 @@
 	<key>newsstandManifestUrl</key>
 	<string>http://jeffreyabelflores.com/taddlecreek/shelf.json</string>
 	<key>purchaseConfirmationUrl</key>
-	<string></string>
+	<string>http://jeffreyabelflores.com/taddlecreek/purchase_confirmation.php</string>
 	<key>purchasesUrl</key>
-	<string></string>
+	<string>http://jeffreyabelflores.com/taddlecreek/purchases.php</string>
 	<key>postApnsTokenUrl</key>
-	<string></string>
+	<string>http://jeffreyabelflores.com/taddlecreek/post_apns_token.php</string>
 	<key>freeSubscriptionProductId</key>
 	<string>com.taddlecreekmag.taddlecreek.free</string>
 	<key>autoRenewableSubscriptionProductIds</key>
-	<array/>
+	<array>
+		<string>com.taddlecreekmag.taddlecreek.oneYear</string>
+	</array>
 	<key>requestTimeout</key>
 	<integer>15</integer>
 	<key>issuesCoverBackgroundColor</key>
