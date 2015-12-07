@@ -799,16 +799,16 @@
     [popoverView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
     
     // Open view
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+    //if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         // On iPad use the UIPopoverController
-        infoPopover = [[UIPopoverController alloc] initWithContentViewController:popoverContent];
-        [infoPopover presentPopoverFromBarButtonItem:self.infoItem
-                            permittedArrowDirections:UIPopoverArrowDirectionUp
-                                            animated:YES];
-    } else {
+     //   infoPopover = [[UIPopoverController alloc] initWithContentViewController:popoverContent];
+    //    [infoPopover presentPopoverFromBarButtonItem:self.infoItem
+  //                          permittedArrowDirections:UIPopoverArrowDirectionUp
+ //                                           animated:YES];
+ //   } else {
         // On iPhone push the view controller to the navigation
         [self.navigationController pushViewController:popoverContent animated:YES];
-    }
+  //  }
     
 }
 
