@@ -64,6 +64,20 @@
             [self addIssueObserver:@selector(handleUnzipError:) name:self.issue.notificationUnzipErrorName];
         }
     }
+    NSArray *familyNames = [[NSArray alloc] initWithArray:[UIFont familyNames]];
+    NSArray *fontNames;
+    NSInteger indFamily, indFont;
+    for (indFamily=0; indFamily<[familyNames count]; ++indFamily)
+    {
+        NSLog(@"Family name: %@", [familyNames objectAtIndex:indFamily]);
+        fontNames = [[NSArray alloc] initWithArray:
+                     [UIFont fontNamesForFamilyName:
+                      [familyNames objectAtIndex:indFamily]]];
+        for (indFont=0; indFont<[fontNames count]; ++indFont)
+        {
+            NSLog(@"    Font name: %@", [fontNames objectAtIndex:indFont]);
+        }
+    }
     return self;
 }
 
@@ -185,6 +199,9 @@
     UIFont *archiveFont = [UIFont fontWithName:[BKRSettings sharedSettings].issuesArchiveFont
                                           size:[BKRSettings sharedSettings].issuesArchiveFontSize
                            ];
+    UIFont *iconFont = [UIFont fontWithName:[BKRSettings sharedSettings].issuesIconFont
+                                          size:[BKRSettings sharedSettings].issuesIconFontSize
+                           ];
 
     UI ui = [BKRIssueViewController getIssueContentMeasures];
     int heightOffset = ui.cellPadding;
@@ -216,9 +233,10 @@
     self.infoLabel.text          = self.issue.info;
     [self.infoLabel sizeToFit];
 
-//    heightOffset = heightOffset + self.infoLabel.frame.size.height + 5;
+    heightOffset = heightOffset + self.infoLabel.frame.size.height + 5;
 
-    heightOffset = 130 + textLineheight + 10;
+//    heightOffset = 130 + textLineheight + 10;
+    
 
     // SETUP ACTION BUTTON
     NSString *status = [self.issue getStatus];
@@ -227,11 +245,11 @@
     } else if ([status isEqualToString:@"downloaded"] || [status isEqualToString:@"bundled"]) {
         self.actionButton.frame = CGRectMake(ui.contentOffset, heightOffset, 80, 30);
     }
-    self.actionButton.titleLabel.font = actionFont;
+    self.actionButton.titleLabel.font = iconFont;
 
     // SETUP ARCHIVE BUTTON
     self.archiveButton.frame = CGRectMake(ui.contentOffset + 80 + 10, heightOffset, 80, 30);
-    self.archiveButton.titleLabel.font = archiveFont;
+    self.archiveButton.titleLabel.font = iconFont;
 
     // SETUP DOWN/LOADING SPINNER AND LABEL
     self.spinner.frame = CGRectMake(ui.contentOffset, heightOffset, 30, 30);
@@ -239,9 +257,9 @@
     self.loadingLabel.font = actionFont;
 
 //    heightOffset = heightOffset + self.loadingLabel.frame.size.height + 5;
-
+    
     // SETUP PROGRESS BAR
-    self.progressBar.frame = CGRectMake(ui.contentOffset, 136, labelWidth, 30);
+    self.progressBar.frame = CGRectMake(CGRectGetMinX(self.actionButton.frame), 136, labelWidth, 30);
 }
 
 - (void)preferredContentSizeChanged:(NSNotification*)notification {

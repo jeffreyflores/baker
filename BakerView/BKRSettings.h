@@ -98,6 +98,8 @@
 @property (nonatomic, readonly) int issuesActionFontSize;
 @property (nonatomic, readonly) NSString *issuesActionBackgroundColor;
 @property (nonatomic, readonly) NSString *issuesActionButtonColor;
+@property (nonatomic, readonly) NSString *issuesIconFont;
+@property (nonatomic, readonly) int issuesIconFontSize;
 
 // Archive button for issues in the shelf
 @property (nonatomic, readonly) NSString *issuesArchiveFont;

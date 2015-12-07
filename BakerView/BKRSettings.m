@@ -103,6 +103,9 @@
         _issuesActionBackgroundColor         = [self stringSettingForKey:@"issuesActionBackgroundColor" withDefault:@"#bc242a"];
         _issuesActionButtonColor             = [self stringSettingForKey:@"issuesActionButtonColor" withDefault:@"#ffffff"];
 
+        _issuesIconFont                    = [self stringSettingForKey:@"issuesIconFont" withDefault:@"FontAwesome"];
+        _issuesIconFontSize                = [self intSettingForKey:@"issuesIconFontSize" withDefault:14];
+
         _issuesArchiveFont                   = [self stringSettingForKey:@"issuesArchiveFont" withDefault:@"Helvetica-Bold"];
         _issuesArchiveFontSize               = [self intSettingForKey:@"issuesArchiveFontSize" withDefault:11];
         _issuesArchiveBackgroundColor        = [self stringSettingForKey:@"issuesArchiveBackgroundColor" withDefault:@"#bc242a"];

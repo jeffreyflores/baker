@@ -77,6 +77,10 @@
 	<string>Helvetica-Bold</string>
 	<key>issuesArchiveFontSize</key>
 	<integer>11</integer>
+	<key>issuesIconFont</key>
+	<string>FontAwesome</string>
+	<key>issuesIconFontSize</key>
+	<integer>14</integer>
 	<key>issuesArchiveBackgroundColor</key>
 	<string>#e35c41</string>
 	<key>issuesArchiveButtonColor</key>

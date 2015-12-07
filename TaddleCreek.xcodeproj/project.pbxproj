@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20CC551D16AD346900DEFB5C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20CC551F16AD346900DEFB5C /* Localizable.strings */; };
+		85BCAA5E1C15322E0095D343 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85BCAA5D1C15322E0095D343 /* FontAwesome.ttf */; };
 		904033901A10FF230035071A /* BKRShelfViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9040338F1A10FF230035071A /* BKRShelfViewLayout.m */; };
 		904C31E71A12645C00E53E66 /* BKRCategoryFilterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 904C31E61A12645C00E53E66 /* BKRCategoryFilterItem.m */; };
 		9F55576815B4C6C3003072A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F55576515B4C6B7003072A3 /* QuartzCore.framework */; };
@@ -69,6 +70,8 @@
 
 /* Begin PBXFileReference section */
 		20CC551E16AD346900DEFB5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		852DC7AF1C14F46D00E51C8E /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		85BCAA5D1C15322E0095D343 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = Baker/FontAwesome.ttf; sourceTree = "<group>"; };
 		9040338E1A10FF230035071A /* BKRShelfViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKRShelfViewLayout.h; sourceTree = "<group>"; };
 		9040338F1A10FF230035071A /* BKRShelfViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKRShelfViewLayout.m; sourceTree = "<group>"; };
 		904C31E51A12645C00E53E66 /* BKRCategoryFilterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKRCategoryFilterItem.h; sourceTree = "<group>"; };
@@ -322,6 +325,7 @@
 		ABAFB57C15AB9A2E002FA498 = {
 			isa = PBXGroup;
 			children = (
+				85BCAA5D1C15322E0095D343 /* FontAwesome.ttf */,
 				AB40048415B4BB8B00D87E2A /* books */,
 				BF78D1AF180C8F070093DFBC /* BakerAssets.xcassets */,
 				AB40047B15B4B8B800D87E2A /* BakerShelf */,
@@ -364,6 +368,7 @@
 				C659B2911A38BA3700CA238C /* newsstand-app-icon.png */,
 				C659B2921A38BA3700CA238C /* newsstand-app-icon@2x.png */,
 				C659B2931A38BA3700CA238C /* newsstand-app-icon@3x.png */,
+				852DC7AF1C14F46D00E51C8E /* FontAwesome.ttf */,
 				C649F09C1A0926CD00B02548 /* settings.plist */,
 				ABAFB59A15AB9A2E002FA498 /* BKRAppDelegate.h */,
 				ABAFB59B15AB9A2E002FA498 /* BKRAppDelegate.m */,
@@ -429,7 +434,7 @@
 				TargetAttributes = {
 					ABAFB58615AB9A2E002FA498 = {
 						DevelopmentTeam = ZQHW9782PS;
-                    };
+					};
 				};
 			};
 			buildConfigurationList = ABAFB58115AB9A2E002FA498 /* Build configuration list for PBXProject "TaddleCreek" */;
@@ -461,6 +466,7 @@
 				BF78D1B0180C8F070093DFBC /* BakerAssets.xcassets in Resources */,
 				20CC551D16AD346900DEFB5C /* Localizable.strings in Resources */,
 				BF0785EB1794AF4000EB988E /* info in Resources */,
+				85BCAA5E1C15322E0095D343 /* FontAwesome.ttf in Resources */,
 				C649F09D1A0926CD00B02548 /* settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,13 +608,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Baker/TaddleCreek-Prefix.pch";
 				INFOPLIST_FILE = "Baker/TaddleCreek-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = TaddleCreek;
+				SWIFT_OBJC_BRIDGING_HEADER = "BakerView/lib/TaddleCreek-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -619,13 +629,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Baker/TaddleCreek-Prefix.pch";
 				INFOPLIST_FILE = "Baker/TaddleCreek-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = TaddleCreek;
+				SWIFT_OBJC_BRIDGING_HEADER = "BakerView/lib/TaddleCreek-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
