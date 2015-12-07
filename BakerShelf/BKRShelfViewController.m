@@ -810,7 +810,8 @@
     popoverView.backgroundColor = [UIColor whiteColor];
     popoverView.delegate        = self;
     popoverContent.view         = popoverView;
-    
+    popoverContent.title = NSLocalizedString(@"POPOVER_TITLE", nil);
+
     // Load HTML file
     NSString *path = [[NSBundle mainBundle] pathForResource:@"info" ofType:@"html" inDirectory:@"info"];
     [popoverView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]]];
