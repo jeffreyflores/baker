@@ -10,11 +10,10 @@
  * General
  */
 body {
+    margin-top:60px;
     background: #f0f0f0;
-    font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
-    margin: 0;
-    padding: 10px;
 }
 
 a {
@@ -54,35 +53,6 @@ h2 {
   font-size: 20px;
   text-transform: uppercase;
 }
-
-/****************************************************************************************************
- * Mini Divider
- */
-#minivider {
-  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 25px 0 6px;
-}
-
-#minivider strong {
-  color: #b50303;
-}
-
-.imageframe-black {
-  background: #000000;
-  text-align: center;
-  padding: 10px;
-}
-
-/****************************************************************************************************
- * Extend
- */
-.grid-50 {
-  padding-left: 0;
-  padding-right: 20px;
-}
-
 /****************************************************************************************************
  * Buttons
  */
@@ -93,9 +63,37 @@ h2 {
   padding: 8px 14px;
   text-decoration: none;
 }
-
-
-
+.floating-nav{
+  height: 59px;
+  background-color: #f0f0f0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  -webkit-touch-callout:none;
+  -webkit-user-select: none;
+  border-bottom:1px solid #bbb;
+}
+.floating-nav .nav-logo{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  height: inherit;
+  z-index: 999;
+  width: 100%;
+}
+.floating-nav .nav-logo .settings-title{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 17px;
+}
 
 
 
