@@ -238,6 +238,7 @@
     self.infoButton.frame = CGRectMake(0, 0, 30, 30);
     NSString *hexStr1 = @"#e35c41";
     UIColor *color1 = [self colorFromHexString:hexStr1];
+    [self.infoButton setTitleColor:color1 forState:UIControlStateNormal];
 
     self.infoButton.titleLabel.textColor = color1;
     
