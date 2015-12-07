@@ -63,6 +63,8 @@
 @property (nonatomic, strong) UIBarButtonItem *refreshButton;
 @property (nonatomic, strong) UIBarButtonItem *subscribeButton;
 @property (strong, nonatomic) UIBarButtonItem *infoItem;
+@property (strong, nonatomic) UIButton *infoButton;
+
 @property (strong, nonatomic) BKRCategoryFilterItem *categoryItem;
 
 @property (nonatomic, strong) UIActionSheet *subscriptionsActionSheet;

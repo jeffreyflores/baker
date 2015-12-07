@@ -228,9 +228,20 @@
     }
     
     // Add info button
-    UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-    [infoButton addTarget:self action:@selector(handleInfoButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    self.infoItem = [[UIBarButtonItem alloc] initWithCustomView:infoButton];
+    // UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    self.infoButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.infoButton setTitle:NSLocalizedString(@"INFO_TEXT", nil) forState:UIControlStateNormal];
+    [self.infoButton addTarget:self action:@selector(handleInfoButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    self.infoButton.titleLabel.font = [UIFont fontWithName:[BKRSettings sharedSettings].issuesIconFont
+                                                      size:24
+                                       ];
+    self.infoButton.frame = CGRectMake(0, 0, 30, 30);
+    NSString *hexStr1 = @"#e35c41";
+    UIColor *color1 = [self colorFromHexString:hexStr1];
+
+    self.infoButton.titleLabel.textColor = color1;
+    
+    self.infoItem = [[UIBarButtonItem alloc] initWithCustomView:self.infoButton];
 
     // Remove file info.html if you don't want the info button to be added to the shelf navigation bar
     NSString *infoPath = [[NSBundle mainBundle] pathForResource:@"info" ofType:@"html" inDirectory:@"info"];
@@ -843,6 +854,14 @@
 
 - (void)categoryFilterItem:(BKRCategoryFilterItem *)categoryFilterItem clickedAction:(NSString *)action {
     [self refreshIssueList];
+}
+
+- (UIColor *)colorFromHexString:(NSString *)hexString {
+    unsigned rgbValue = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    [scanner setScanLocation:1]; // bypass '#' character
+    [scanner scanHexInt:&rgbValue];
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
 }
 
 @end

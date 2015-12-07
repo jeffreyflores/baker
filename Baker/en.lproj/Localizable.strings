@@ -69,6 +69,7 @@
 "OPENING_TEXT" = "Loading...";
 "BUYING_TEXT" = "BUYING...";
 "RETRIEVING_TEXT" = "UPDATING PRICE...";
+"INFO_TEXT" = "\Uf013";//INFO BUTTON
 
 // Issue states
 "FREE_TEXT" = "\Uf0ed";//FREE
