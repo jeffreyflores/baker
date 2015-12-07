@@ -1866,7 +1866,12 @@
 - (BOOL)shouldAutorotate {
     return YES;
 }
-- (NSUInteger)supportedInterfaceOrientations {
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 90000
+- (NSUInteger)supportedInterfaceOrientations
+#else
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+#endif
+{
     if ([self.book.orientation isEqualToString:@"portrait"]) {
         return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
     } else if ([self.book.orientation isEqualToString:@"landscape"]) {
