@@ -312,7 +312,7 @@
         self.progressBar.progress = 0;
         self.loadingLabel.text    = NSLocalizedString(@"DOWNLOADING_TEXT", nil);
         self.loadingLabel.hidden  = NO;
-        self.progressBar.hidden   = NO;
+        self.progressBar.hidden   = YES;
     } else if ([status isEqualToString:@"downloaded"]) {
         NSLog(@"[BakerShelf] '%@' is Ready to be Read.", self.issue.ID);
         [self.actionButton setTitle:NSLocalizedString(@"ACTION_DOWNLOADED_TEXT", nil) forState:UIControlStateNormal];
@@ -572,6 +572,7 @@
         NSDate *date     = nkIssue.date;
 
         [nkLib removeIssue:nkIssue];
+        self.progressBar.progress = 0;
 
         nkIssue = [nkLib addIssueWithName:name date:date];
         self.issue.path = [[nkIssue contentURL] path];
