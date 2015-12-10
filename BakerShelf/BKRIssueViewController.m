@@ -64,6 +64,7 @@
             [self addIssueObserver:@selector(handleUnzipError:) name:self.issue.notificationUnzipErrorName];
         }
     }
+   /*list loaded fonts
     NSArray *familyNames = [[NSArray alloc] initWithArray:[UIFont familyNames]];
     NSArray *fontNames;
     NSInteger indFamily, indFont;
@@ -78,6 +79,7 @@
             NSLog(@"    Font name: %@", [fontNames objectAtIndex:indFont]);
         }
     }
+    */
     return self;
 }
 
