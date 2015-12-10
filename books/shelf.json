@@ -1,10 +1,18 @@
-[
+[  
   {
-    "name": "a-study-in-scarlet",
-    "title": "A Study in Scarlet",
-    "info": "The original masterpiece by Sir A. Conan Doyle",
-    "date": "1887-10-10 10:10:10",
-    "cover": "http://jeffreyabelflores.com/taddlecreek/a-study-in-scarlet.png",
-    "url": "http://jeffreyabelflores.com/taddlecreek/a-study-in-scarlet.hpub"
+    "name": "taddlecreek35_ipad",
+    "title": "Taddle Creek No.35",
+    "info": "",
+    "date": "2015-12-08 10:10:10",
+    "cover": "http://taddlecreekmag.com/taddlecreek/issues/taddlecreek35_ipad.jpg",
+    "url": "http://taddlecreekmag.com/taddlecreek/issues/taddlecreek35_ipad.hpub"
+  },
+  {
+    "name": "taddlecreek36_ipad",
+    "title": "Taddle Creek No.36",
+    "info": "",
+    "date": "2015-12-09 10:10:10",
+    "cover": "http://taddlecreekmag.com/taddlecreek/issues/taddlecreek36_ipad.jpg",
+    "url": "http://taddlecreekmag.com/taddlecreek/issues/taddlecreek36_ipad.hpub"
   }
 ]

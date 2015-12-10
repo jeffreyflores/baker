@@ -78,6 +78,7 @@
         _newsstandLatestIssueCover           = [self boolSettingForKey:@"newsstandLatestIssueCover" withDefault:YES];
         
         _newsstandManifestUrl                = [self stringSettingForKey:@"newsstandManifestUrl" withDefault:@"http://bakerframework.com/demo/shelf.json"];
+        _newsstandManifestUrlIphone          = [self stringSettingForKey:@"newsstandManifestUrlIphone" withDefault:@"http://bakerframework.com/demo/shelf.json"];
         _purchaseConfirmationUrl             = [self stringSettingForKey:@"purchaseConfirmationUrl" withDefault:@""];
         _purchasesUrl                        = [self stringSettingForKey:@"purchasesUrl" withDefault:@""];
         _postApnsTokenUrl                    = [self stringSettingForKey:@"postApnsTokenUrl" withDefault:@""];

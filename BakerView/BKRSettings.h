@@ -43,6 +43,7 @@
 // For more information on this file, see: https://github.com/Simbul/baker/wiki/Newsstand-shelf-JSON
 // E.g. @"http://example.com/shelf.json"
 @property (nonatomic, readonly) NSString *newsstandManifestUrl;
+@property (nonatomic, readonly) NSString *newsstandManifestUrlIphone;
 
 @property (nonatomic, readonly) BOOL newsstandLatestIssueCover;
 

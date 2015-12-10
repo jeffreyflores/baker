@@ -258,8 +258,10 @@
 }
 
 - (NSURL*)manifestURL {
-    if ([BKRSettings sharedSettings].isNewsstand && [BKRSettings sharedSettings].newsstandManifestUrl.length > 0) {
+    if ([BKRSettings sharedSettings].isNewsstand && [BKRSettings sharedSettings].newsstandManifestUrl.length > 0 && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         return [NSURL URLWithString:[BKRSettings sharedSettings].newsstandManifestUrl];
+    }else{
+    	return [NSURL URLWithString:[BKRSettings sharedSettings].newsstandManifestUrlIphone];
     }
     return nil;
 }

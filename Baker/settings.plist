@@ -10,6 +10,8 @@
 	<true/>
 	<key>newsstandManifestUrl</key>
 	<string>http://jeffreyabelflores.com/taddlecreek/shelf.json</string>
+	<key>newsstandManifestUrlIphone</key>
+	<string>http://jeffreyabelflores.com/taddlecreek/shelf_iphone.json</string>
 	<key>purchaseConfirmationUrl</key>
 	<string>http://jeffreyabelflores.com/taddlecreek/purchase_confirmation.php</string>
 	<key>purchasesUrl</key>
