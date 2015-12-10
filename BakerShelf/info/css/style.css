@@ -1,99 +1,69 @@
-/*
- * Baker Framework - Info Bos
- * last update: 2013-07-15
- * 
- * Copyright (C) 2011-13 by Davide S. Casali <folletto AT gmail DOT com>
- * 
- */
-
-/****************************************************************************************************
- * General
- */
-body {
-    margin-top:60px;
-    background: #f0f0f0;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
+@font-face {
+	font-family: 'futurastd_book';
+	src: url("../fonts/FuturaStd-Book.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+:not(input){
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family:'futurastd_book', Helvetica;
+}
+p{	
+	color: black;
+	font-size: 20px;
 }
 
-a {
-  color: #b50303;
+h1{
+	color: rgb(238, 49, 41);
+	font-size: 40px;
 }
 
-/****************************************************************************************************
- * Typography
- */
-p, ul, ol {
-  font-size: 15px;
+.signin{
+	margin-bottom:20px;
+}
+input{
+	margin-bottom:20px;
+}
+.form-content{
+	margin-top: 30px;
+	text-align: center;
+}
+p.no-margin-bottom{
+	margin-bottom:0;
+}
+input.form-control{
+	background-color:#000;
+	border-radius:0px;
+	color: #fff;
+	font-size:16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "BodoniSvtyTwoOSITCTT-Bold", Times, serif;
-  font-weight: normal;
-  text-align: left;
-  
-  border: 0;
-  margin: 0;
-  padding: 0;
+button.taddle-submit{
+	color: rgb(238, 49, 41);
+	margin-bottom:20px;
+	height:44px;
+	font-size:16px;
+	border-radius: 0px;
 }
 
-strong {
-  font-weight: normal;
-}
+/* Portrait tablets and greater */
+@media (min-width: 768px)  {
+	.col-sm-10 p{
+			font-size: 30px;
+	}
+	.col-sm-10 h1{
+			font-size: 50px;
 
-h1 {
-  color: #bc242a;
-  font-size: 25px;
-  padding: 0;
-  margin: 15px 0 15px 0;
+	}
+	.col-sm-10 input.form-control{
+		font-size:20px;
+	}
+	.col-sm-10 button.taddle-submit{
+		font-size:20px;
+	}
 }
-
-h2 {
-  margin: 30px 0 8px;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-/****************************************************************************************************
- * Buttons
- */
-.button {
-  display: inline-block;
-  background: #bc242a;
-  color: #ffffff;
-  padding: 8px 14px;
-  text-decoration: none;
-}
-.floating-nav{
-  height: 59px;
-  background-color: #f0f0f0;
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-  top: 0;
-  -webkit-touch-callout:none;
-  -webkit-user-select: none;
-  border-bottom:1px solid #bbb;
-}
-.floating-nav .nav-logo{
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  height: inherit;
-  z-index: 999;
-  width: 100%;
-}
-.floating-nav .nav-logo .settings-title{
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-weight: bold;
-  font-size: 17px;
-}
-
-
-
