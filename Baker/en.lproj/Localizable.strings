@@ -113,4 +113,4 @@
 "SOCIAL_SHARE_BUTTON_MESSAGE" = "I'm reading \"%@\" from \"%@\". Check it at %@";
 
 //PushViewController title
-"POPOVER_TITLE" = "Settings";
+"POPOVER_TITLE" = "";
