@@ -38,17 +38,15 @@ p.no-margin-bottom{
 }
 input.form-control{
 	background-color:#000;
-	border-radius:0px;
-	color: #fff;
+	color: #000;
 	font-size:16px;
 }
 
 button.taddle-submit{
 	color: rgb(238, 49, 41);
-	margin-bottom:20px;
+	margin-bottom:40px;
 	height:44px;
 	font-size:16px;
-	border-radius: 0px;
 }
 
 /* Portrait tablets and greater */
