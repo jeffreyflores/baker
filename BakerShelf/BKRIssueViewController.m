@@ -99,8 +99,12 @@
     UI ui = [BKRIssueViewController getIssueContentMeasures];
 
     self.issueCover = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.issueCover.frame = CGRectMake(ui.cellPadding, ui.cellPadding, ui.thumbWidth, ui.thumbHeight);
-
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        self.issueCover.frame = CGRectMake((cellSize.width / 2) - (ui.thumbWidth / 2), 0, ui.thumbWidth, ui.thumbHeight);
+    }else{
+        self.issueCover.frame = CGRectMake(ui.cellPadding, ui.cellPadding, ui.thumbWidth, ui.thumbHeight);
+    }
+    
     self.issueCover.backgroundColor = [UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesCoverBackgroundColor];
     self.issueCover.adjustsImageWhenHighlighted = NO;
     self.issueCover.adjustsImageWhenDisabled = NO;
@@ -133,20 +137,29 @@
 
     // SETUP ACTION BUTTON
     self.actionButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.actionButton.backgroundColor = [UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionBackgroundColor];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        self.actionButton.backgroundColor = [UIColor clearColor];
+        [self.actionButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionBackgroundColor] forState:UIControlStateNormal];
+    }else{
+        self.actionButton.backgroundColor = [UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionBackgroundColor];
+        [self.actionButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionButtonColor] forState:UIControlStateNormal];
+    }
 
     [self.actionButton setTitle:NSLocalizedString(@"ACTION_DOWNLOADED_TEXT", nil) forState:UIControlStateNormal];
-    [self.actionButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionButtonColor] forState:UIControlStateNormal];
     [self.actionButton addTarget:self action:@selector(actionButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
 
     [self.view addSubview:self.actionButton];
 
     // SETUP ARCHIVE BUTTON
     self.archiveButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.archiveButton.backgroundColor = [UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesArchiveBackgroundColor];
-
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        self.archiveButton.backgroundColor = [UIColor clearColor];
+        [self.archiveButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionBackgroundColor] forState:UIControlStateNormal];
+    }else{
+        self.archiveButton.backgroundColor = [UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionBackgroundColor];
+        [self.archiveButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesArchiveButtonColor] forState:UIControlStateNormal];
+    }
     [self.archiveButton setTitle:NSLocalizedString(@"ARCHIVE_TEXT", nil) forState:UIControlStateNormal];
-    [self.archiveButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesArchiveButtonColor] forState:UIControlStateNormal];
 
     if ([BKRSettings sharedSettings].isNewsstand) {
         [self.archiveButton addTarget:self action:@selector(archiveButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -189,6 +202,9 @@
 }
 
 - (void)refreshContentWithCache:(bool)cache {
+    
+    CGSize cellSize = [BKRIssueViewController getIssueCellSizeForOrientation:self.interfaceOrientation];
+    
     UIFont *titleFont = [UIFont fontWithName:[BKRSettings sharedSettings].issuesTitleFont
                                         size:[BKRSettings sharedSettings].issuesTitleFontSize
                          ];
@@ -201,10 +217,16 @@
     UIFont *archiveFont = [UIFont fontWithName:[BKRSettings sharedSettings].issuesArchiveFont
                                           size:[BKRSettings sharedSettings].issuesArchiveFontSize
                            ];
-    UIFont *iconFont = [UIFont fontWithName:[BKRSettings sharedSettings].issuesIconFont
-                                          size:[BKRSettings sharedSettings].issuesIconFontSize
+    UIFont *iconFont;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        iconFont = [UIFont fontWithName:[BKRSettings sharedSettings].issuesIconFont
+                                          size:25
                            ];
-
+    }else{
+        iconFont = [UIFont fontWithName:[BKRSettings sharedSettings].issuesIconFont
+                                           size:[BKRSettings sharedSettings].issuesIconFontSize
+                            ];
+    }
     UI ui = [BKRIssueViewController getIssueContentMeasures];
     int heightOffset = ui.cellPadding;
     uint textLineheight = [@"The brown fox jumps over the lazy dog" boundingRectWithSize:CGSizeMake(MAXFLOAT,MAXFLOAT)
@@ -221,7 +243,11 @@
     
     // SETUP TITLE LABEL
     self.titleLabel.font          = titleFont;
-    self.titleLabel.frame         = CGRectMake(ui.contentOffset, heightOffset, labelWidth, 60);
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+    	self.titleLabel.frame         = CGRectMake((cellSize.width / 2) - (ui.thumbWidth / 2), ui.thumbHeight + 15, cellSize.width - ui.cellPadding, 60);
+    }else{
+    	self.titleLabel.frame         = CGRectMake(ui.contentOffset, heightOffset, cellSize.width - (ui.cellPadding * 3) - ui.thumbWidth, 60);
+    }
     self.titleLabel.numberOfLines = 3;
     self.titleLabel.text          = self.issue.title;
     [self.titleLabel sizeToFit];
@@ -230,7 +256,11 @@
 
     // SETUP INFO LABEL
     self.infoLabel.font          = infoFont;
-    self.infoLabel.frame         = CGRectMake(ui.contentOffset, heightOffset, labelWidth, 60);
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        self.infoLabel.frame         = CGRectMake((cellSize.width / 2) - (ui.thumbWidth / 2), ui.thumbHeight + 15, cellSize.width - ui.cellPadding, 60);
+    }else{
+        self.infoLabel.frame         = CGRectMake(ui.contentOffset, heightOffset, cellSize.width - (ui.cellPadding * 3) - ui.thumbWidth, 60);
+    }
     self.infoLabel.numberOfLines = 3;
     self.infoLabel.text          = self.issue.info;
     [self.infoLabel sizeToFit];
@@ -242,26 +272,47 @@
 
     // SETUP ACTION BUTTON
     NSString *status = [self.issue getStatus];
-    if ([status isEqualToString:@"remote"] || [status isEqualToString:@"purchasable"] || [status isEqualToString:@"purchased"]) {
-        self.actionButton.frame = CGRectMake(ui.contentOffset, heightOffset, 110, 30);
-    } else if ([status isEqualToString:@"downloaded"] || [status isEqualToString:@"bundled"]) {
-        self.actionButton.frame = CGRectMake(ui.contentOffset, heightOffset, 80, 30);
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        if ([status isEqualToString:@"remote"] || [status isEqualToString:@"purchasable"] || [status isEqualToString:@"purchased"]) {
+            self.actionButton.frame = CGRectMake((cellSize.width / 2) - (ui.thumbWidth / 2) - 6, ui.thumbHeight + 30, 44, 44);
+        } else if ([status isEqualToString:@"downloaded"] || [status isEqualToString:@"bundled"]) {
+            self.actionButton.frame = CGRectMake((cellSize.width / 2) - (ui.thumbWidth / 2) - 6, ui.thumbHeight + 30, 44, 44);
+        }
+    }
+    else{
+        if ([status isEqualToString:@"remote"] || [status isEqualToString:@"purchasable"] || [status isEqualToString:@"purchased"]) {
+            self.actionButton.frame = CGRectMake(ui.contentOffset, heightOffset, 110, 30);
+        } else if ([status isEqualToString:@"downloaded"] || [status isEqualToString:@"bundled"]) {
+            self.actionButton.frame = CGRectMake(ui.contentOffset, heightOffset, 80, 30);
+        }
     }
     self.actionButton.titleLabel.font = iconFont;
 
     // SETUP ARCHIVE BUTTON
-    self.archiveButton.frame = CGRectMake(ui.contentOffset + 80 + 10, heightOffset, 80, 30);
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        self.archiveButton.frame = CGRectMake((cellSize.width / 2) - (ui.thumbWidth / 2) + 64 - 6, ui.thumbHeight + 30, 44, 44);
+    }else{
+        self.archiveButton.frame = CGRectMake(ui.contentOffset + 80 + 10, heightOffset, 80, 30);
+    }
     self.archiveButton.titleLabel.font = iconFont;
 
+    int buttonsOffset = ui.thumbHeight + 30;
+    
     // SETUP DOWN/LOADING SPINNER AND LABEL
-    self.spinner.frame = CGRectMake(ui.contentOffset, heightOffset, 30, 30);
-    self.loadingLabel.frame = CGRectMake(ui.contentOffset + self.spinner.frame.size.width + 10, heightOffset, 135, 30);
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        self.spinner.frame = CGRectMake((cellSize.width / 2) - (ui.thumbWidth / 2), buttonsOffset + 5, 30, 30);
+        self.loadingLabel.frame = CGRectMake((cellSize.width / 2) - (ui.thumbWidth / 2) + self.spinner.frame.size.width + 10, buttonsOffset + 5, 135, 30);
+        self.progressBar.frame = CGRectMake(CGRectGetMinX(self.actionButton.frame), 136, labelWidth, 30);
+    }
+    else{
+        self.spinner.frame = CGRectMake(ui.contentOffset, heightOffset, 30, 30);
+        self.loadingLabel.frame = CGRectMake(ui.contentOffset + self.spinner.frame.size.width + 10, heightOffset, 135, 30);
+        //    heightOffset = heightOffset + self.loadingLabel.frame.size.height + 5;
+        // SETUP PROGRESS BAR
+        self.progressBar.frame = CGRectMake(CGRectGetMinX(self.actionButton.frame), 136, labelWidth, 30);
+    }
     self.loadingLabel.font = actionFont;
 
-//    heightOffset = heightOffset + self.loadingLabel.frame.size.height + 5;
-    
-    // SETUP PROGRESS BAR
-    self.progressBar.frame = CGRectMake(CGRectGetMinX(self.actionButton.frame), 136, labelWidth, 30);
 }
 
 - (void)preferredContentSizeChanged:(NSNotification*)notification {
@@ -615,8 +666,8 @@
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         UI iPad = {
             .cellPadding   = 30,
-            .thumbWidth    = 135,
-            .thumbHeight   = 180,
+            .thumbWidth    = 186,
+            .thumbHeight   = 248,
             .contentOffset = 184
         };
         return iPad;
@@ -633,7 +684,7 @@
 
 + (int)getIssueCellHeight {
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        return 240;
+        return 330;
     } else {
         return 190;
     }
@@ -644,8 +695,8 @@
     CGFloat screenWidth = [[UIScreen mainScreen] bkrWidthForOrientation:orientation];
     int cellHeight      = [BKRIssueViewController getIssueCellHeight];
     
-    if (screenWidth > 700) {
-        return CGSizeMake(screenWidth/2, cellHeight);
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        return CGSizeMake(screenWidth/3, cellHeight);
     } else {
         return CGSizeMake(screenWidth, cellHeight);
     }
