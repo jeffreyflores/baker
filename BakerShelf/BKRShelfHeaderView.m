@@ -37,6 +37,10 @@
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
+    
+    UIFont *titleFont = [UIFont fontWithName:[BKRSettings sharedSettings].issuesTitleFont
+                                        size: 12
+                         ];
     if (self) {
         
         _headerImage = [[UIImageView alloc] initWithFrame:self.frame];
@@ -52,6 +56,25 @@
 
         [self addSubview:_headerImage];
         
+        // SETUP SHELF LABEL
+		self.shelfLabel = [[UILabel alloc] init];
+		self.shelfLabel.textColor = [UIColor blackColor];
+		self.shelfLabel.backgroundColor = [UIColor clearColor];
+		self.shelfLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+		self.shelfLabel.textAlignment = NSTextAlignmentCenter;
+        self.shelfLabel.font          = titleFont;
+        self.shelfLabel.numberOfLines = 3;
+        self.shelfLabel.text          = @"(Double tap within issues to navigate.)";
+        //[self.shelfLabel sizeToFit];
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+            self.shelfLabel.frame         = CGRectMake(0, self.headerImage.frame.size.height - 50, self.headerImage.frame.size.width, 40);
+        }else{
+            self.shelfLabel.frame         = CGRectMake(0, self.headerImage.frame.size.height - 30, self.headerImage.frame.size.width, 40);
+        }
+
+       // [self.shelfLabel setCenter:self.center];
+        
+		[self addSubview:self.shelfLabel];
     }
     return self;
 }

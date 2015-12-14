@@ -34,5 +34,6 @@
 @interface BKRShelfHeaderView : UICollectionReusableView
 
 @property (nonatomic, strong) UIImageView *headerImage;
+@property (nonatomic, strong) UILabel *shelfLabel;
 
 @end
