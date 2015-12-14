@@ -141,8 +141,8 @@
         self.actionButton.backgroundColor = [UIColor clearColor];
         [self.actionButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionBackgroundColor] forState:UIControlStateNormal];
     }else{
-        self.actionButton.backgroundColor = [UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionBackgroundColor];
-        [self.actionButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionButtonColor] forState:UIControlStateNormal];
+        self.actionButton.backgroundColor = [UIColor clearColor];
+        [self.actionButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionBackgroundColor] forState:UIControlStateNormal];
     }
 
     [self.actionButton setTitle:NSLocalizedString(@"ACTION_DOWNLOADED_TEXT", nil) forState:UIControlStateNormal];
@@ -156,8 +156,8 @@
         self.archiveButton.backgroundColor = [UIColor clearColor];
         [self.archiveButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionBackgroundColor] forState:UIControlStateNormal];
     }else{
-        self.archiveButton.backgroundColor = [UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionBackgroundColor];
-        [self.archiveButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesArchiveButtonColor] forState:UIControlStateNormal];
+        self.archiveButton.backgroundColor = [UIColor clearColor];
+        [self.archiveButton setTitleColor:[UIColor bkrColorWithHexString:[BKRSettings sharedSettings].issuesActionBackgroundColor] forState:UIControlStateNormal];
     }
     [self.archiveButton setTitle:NSLocalizedString(@"ARCHIVE_TEXT", nil) forState:UIControlStateNormal];
 
@@ -224,7 +224,7 @@
                            ];
     }else{
         iconFont = [UIFont fontWithName:[BKRSettings sharedSettings].issuesIconFont
-                                           size:[BKRSettings sharedSettings].issuesIconFontSize
+                                           size:25
                             ];
     }
     UI ui = [BKRIssueViewController getIssueContentMeasures];
@@ -274,25 +274,25 @@
     NSString *status = [self.issue getStatus];
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         if ([status isEqualToString:@"remote"] || [status isEqualToString:@"purchasable"] || [status isEqualToString:@"purchased"]) {
-            self.actionButton.frame = CGRectMake((cellSize.width / 2) - (ui.thumbWidth / 2) - 6, ui.thumbHeight + 30, 44, 44);
+            self.actionButton.frame = CGRectMake(ui.thumbWidth + (cellSize.width / 2) - (ui.thumbWidth / 2) - 44 + 8, ui.thumbHeight, 44, 44);
         } else if ([status isEqualToString:@"downloaded"] || [status isEqualToString:@"bundled"]) {
-            self.actionButton.frame = CGRectMake((cellSize.width / 2) - (ui.thumbWidth / 2) - 6, ui.thumbHeight + 30, 44, 44);
+            self.actionButton.frame = CGRectMake(ui.thumbWidth + (cellSize.width / 2) - (ui.thumbWidth / 2) - 44 + 8, ui.thumbHeight, 44, 44);
         }
     }
     else{
         if ([status isEqualToString:@"remote"] || [status isEqualToString:@"purchasable"] || [status isEqualToString:@"purchased"]) {
-            self.actionButton.frame = CGRectMake(ui.contentOffset, heightOffset, 110, 30);
+            self.actionButton.frame = CGRectMake(ui.contentOffset - 8, heightOffset, 44, 44);
         } else if ([status isEqualToString:@"downloaded"] || [status isEqualToString:@"bundled"]) {
-            self.actionButton.frame = CGRectMake(ui.contentOffset, heightOffset, 80, 30);
+            self.actionButton.frame = CGRectMake(ui.contentOffset - 8, heightOffset, 44, 44);
         }
     }
     self.actionButton.titleLabel.font = iconFont;
 
     // SETUP ARCHIVE BUTTON
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        self.archiveButton.frame = CGRectMake((cellSize.width / 2) - (ui.thumbWidth / 2) + 64 - 6, ui.thumbHeight + 30, 44, 44);
+        self.archiveButton.frame = CGRectMake(ui.thumbWidth + (cellSize.width / 2) - (ui.thumbWidth / 2) - 44 + 8, ui.thumbHeight, 44, 44);
     }else{
-        self.archiveButton.frame = CGRectMake(ui.contentOffset + 80 + 10, heightOffset, 80, 30);
+        self.archiveButton.frame = CGRectMake(ui.contentOffset - 8, heightOffset, 44, 44);
     }
     self.archiveButton.titleLabel.font = iconFont;
 
@@ -371,7 +371,7 @@
         [self.actionButton setTitle:NSLocalizedString(@"ACTION_DOWNLOADED_TEXT", nil) forState:UIControlStateNormal];
         [self.spinner stopAnimating];
 
-        self.actionButton.hidden  = NO;
+        self.actionButton.hidden  = YES;
         self.archiveButton.hidden = NO;
         self.loadingLabel.hidden  = YES;
         self.progressBar.hidden   = YES;
@@ -684,9 +684,9 @@
 
 + (int)getIssueCellHeight {
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        return 330;
+        return 320;
     } else {
-        return 190;
+        return 160;
     }
 }
 
