@@ -1,3 +1,6 @@
+$(function() {
+    FastClick.attach(document.body);
+});
 $( document ).ready(function() {
 	$("#submit-button").on('click', function(){
    	$("#submit-button").attr("disabled", "disabled");
