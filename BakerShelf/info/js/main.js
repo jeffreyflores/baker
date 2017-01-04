@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 	$("#submit-button").on('click', function(){
+   	$("#submit-button").attr("disabled", "disabled");
+
     	var subscriber_number = $("#subscriber-number").val();
 	    if(subscriber_number){	
 		    $.post("http://jeffreyabelflores.com/taddlecreek/info/submit.php", {subscriber_number: subscriber_number},
@@ -9,6 +11,7 @@ $( document ).ready(function() {
 					$("#response").append(error_msg);
 					$(".close-button").on('click', function(){
 						$("#error-dialog").addClass("dialog-close");
+						$("#submit-button").removeAttr("disabled");
 						setTimeout(function(){
 								$("#error-dialog").remove();
 						}, 500);
@@ -18,6 +21,7 @@ $( document ).ready(function() {
 					$("#response").append(error_msg);
 					$(".close-button").on('click', function(){
 						$("#error-dialog").addClass("dialog-close");
+						$("#submit-button").removeAttr("disabled");
 						setTimeout(function(){
 								$("#error-dialog").remove();
 						}, 500);
@@ -27,6 +31,7 @@ $( document ).ready(function() {
 					$("#response").append(error_msg);
 					$(".close-button").on('click', function(){
 						$("#error-dialog").addClass("dialog-close");
+						$("#submit-button").removeAttr("disabled");
 						setTimeout(function(){
 								$("#error-dialog").remove();
 						}, 500);
@@ -37,6 +42,7 @@ $( document ).ready(function() {
 	    	var error_msg = "<div id='error-dialog' class='dialog-container'><div class='black-bg'></div><div class='vert-fix'><div class='dialog'><div class='message'>Your subscriber number appears to be incomplete. Please try again.</div><div class='errorbuttons close-button'>OK</div></div></div></div>";
 			$("#response").append(error_msg);
 			$(".close-button").on('click', function(){
+				$("#submit-button").removeAttr("disabled");
 				$("#error-dialog").addClass("dialog-close");
 				setTimeout(function(){
 						$("#error-dialog").remove();
