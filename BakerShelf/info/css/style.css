@@ -49,6 +49,81 @@ button.taddle-submit{
 	font-size:16px;
 }
 
+/*info page button*/
+.dialog {
+	font-family: "Helvetica Neue", Helvetica;
+    z-index: 10;
+    background: #fff;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);	
+    display:block;
+	margin:0 auto;
+	width:300px;
+	border-radius: 5px;
+	padding-top: 15px;
+	text-align:center;
+}
+.message{
+	padding:5px 25px;
+}
+#error-dialog{
+	/*-webkit-animation: slidein 0.25s;*/
+	-webkit-animation: fadein 0.5s;
+}
+@-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+.dialog-close{
+	-webkit-animation: fadeout 0.5s !important;
+}
+@-webkit-keyframes fadeout {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+/* Restore Purchases Dialog */
+.dialog-container{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top:0;
+	left:0;
+	z-index: 3;
+}
+.black-bg{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top:0;
+	left:0;
+	background-color:#000;
+	opacity:0.8;
+
+}
+#error-dialog{
+}
+.errorbuttons{
+	margin-top:10px;
+	display:inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width:148px;
+	padding:10px 0px;
+	color: rgb(0, 122, 255);
+	width:100%;
+	border-width: 1px 0px 0px 0px;
+	border-color: #ddd;
+	border-style: solid;
+}
+.vert-fix{
+	position: relative;
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	opactiy:0.9;
+}
+/*end info page button*/
+
 /* Portrait tablets and greater */
 @media (min-width: 768px)  {
 	.col-sm-10 p{
