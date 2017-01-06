@@ -18,8 +18,6 @@
 	<string>http://jeffreyabelflores.com/taddlecreek/purchases.php</string>
 	<key>postApnsTokenUrl</key>
 	<string>http://jeffreyabelflores.com/taddlecreek/post_apns_token.php</string>
-	<key>freeSubscriptionProductId</key>
-	<string>com.taddlecreekmag.taddlecreek.free</string>
 	<key>autoRenewableSubscriptionProductIds</key>
 	<array>
 		<string>com.taddlecreekmag.taddlecreek.oneYear</string>
