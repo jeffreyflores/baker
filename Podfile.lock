@@ -20,16 +20,19 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AFSQLManager (1.0.2)
   - WebViewJavascriptBridge (5.2.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
+  - AFSQLManager (~> 1.0)
   - WebViewJavascriptBridge (~> 5.0)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AFSQLManager: 387d7556386797d54dc2727677aab9c4e6604a1c
   WebViewJavascriptBridge: a00b2d61252aec5207e3263d46fd0fd3cfaf7895
 
-PODFILE CHECKSUM: 36283d6687131f1077865cbfb2c16cb6c7b2045c
+PODFILE CHECKSUM: de7a960bfe977696cf7116252d664dc920dc38e4
 
 COCOAPODS: 1.2.0

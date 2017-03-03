@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F1B53B6378734BB33B1750C01FC7DF89'
-               BlueprintName = 'Pods-TaddleCreek'
+               BlueprintIdentifier = '247537E675529C6B5474D8F978214ABC'
+               BlueprintName = 'AFSQLManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-TaddleCreek.a'>
+               BuildableName = 'libAFSQLManager.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
