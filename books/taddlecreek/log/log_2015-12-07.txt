@@ -1,0 +1,270 @@
+2015-12-07 21:13:50 - INFO --> 
+2015-12-07 21:13:50 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 21:13:50 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 21:13:50 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 21:13:50 - INFO --> POST array (
+)
+2015-12-07 21:13:50 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 21:14:12 - INFO --> 
+2015-12-07 21:14:12 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 21:14:12 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 21:14:12 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 21:14:12 - INFO --> POST array (
+)
+2015-12-07 21:14:12 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:20:34 - INFO --> 
+2015-12-07 22:20:34 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:20:34 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:20:34 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:20:34 - INFO --> POST array (
+)
+2015-12-07 22:20:34 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:22:11 - INFO --> 
+2015-12-07 22:22:11 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:22:11 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:22:11 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:22:11 - INFO --> POST array (
+)
+2015-12-07 22:22:11 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:25:41 - INFO --> 
+2015-12-07 22:25:41 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:25:41 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:25:41 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:25:41 - INFO --> POST array (
+)
+2015-12-07 22:25:41 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:34:55 - INFO --> 
+2015-12-07 22:34:55 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:34:55 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:34:55 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:34:55 - INFO --> POST array (
+)
+2015-12-07 22:34:55 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:35:18 - INFO --> 
+2015-12-07 22:35:18 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:35:18 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:35:18 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:35:18 - INFO --> POST array (
+)
+2015-12-07 22:35:18 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:53:21 - INFO --> 
+2015-12-07 22:53:21 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:53:21 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:53:21 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:53:21 - INFO --> POST array (
+)
+2015-12-07 22:53:21 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:55:36 - INFO --> 
+2015-12-07 22:55:36 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:55:36 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:55:36 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:55:36 - INFO --> POST array (
+)
+2015-12-07 22:55:36 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:56:05 - INFO --> 
+2015-12-07 22:56:05 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:56:05 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:56:05 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:56:05 - INFO --> POST array (
+)
+2015-12-07 22:56:05 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:56:32 - INFO --> 
+2015-12-07 22:56:32 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:56:32 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:56:32 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:56:32 - INFO --> POST array (
+)
+2015-12-07 22:56:32 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:57:02 - INFO --> 
+2015-12-07 22:57:02 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:57:02 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:57:02 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:57:02 - INFO --> POST array (
+)
+2015-12-07 22:57:02 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:57:27 - INFO --> 
+2015-12-07 22:57:27 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:57:27 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:57:27 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:57:27 - INFO --> POST array (
+)
+2015-12-07 22:57:27 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 22:59:24 - INFO --> 
+2015-12-07 22:59:24 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 22:59:24 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 22:59:24 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 22:59:24 - INFO --> POST array (
+)
+2015-12-07 22:59:24 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 23:05:12 - INFO --> 
+2015-12-07 23:05:12 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 23:05:12 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 23:05:12 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 23:05:12 - INFO --> POST array (
+)
+2015-12-07 23:05:12 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 23:06:29 - INFO --> 
+2015-12-07 23:06:29 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 23:06:29 - INFO --> /taddlecreek/purchases.php?environment=debug&devicetype=tablet&user_id=65959E29-8F53-42B7-AB85-26302B278DE6&app_id=com.taddlecreekmag.taddlecreek
+2015-12-07 23:06:29 - INFO --> GET array (
+  'environment' => 'debug',
+  'devicetype' => 'tablet',
+  'user_id' => '65959E29-8F53-42B7-AB85-26302B278DE6',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+)
+2015-12-07 23:06:29 - INFO --> POST array (
+)
+2015-12-07 23:06:29 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 23:07:52 - INFO --> 
+2015-12-07 23:07:52 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 23:07:52 - INFO --> /taddlecreek/purchases.php?environment=debug&user_id=CCD03949-6B2E-4D20-BE18-D62F9E04789D&app_id=com.taddlecreekmag.taddlecreek&devicetype=tablet
+2015-12-07 23:07:52 - INFO --> GET array (
+  'environment' => 'debug',
+  'user_id' => 'CCD03949-6B2E-4D20-BE18-D62F9E04789D',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+  'devicetype' => 'tablet',
+)
+2015-12-07 23:07:52 - INFO --> POST array (
+)
+2015-12-07 23:07:52 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 23:07:55 - INFO --> 
+2015-12-07 23:07:55 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 23:07:55 - INFO --> /taddlecreek/post_apns_token.php
+2015-12-07 23:07:55 - INFO --> GET array (
+)
+2015-12-07 23:07:55 - INFO --> POST array (
+  'environment' => 'debug',
+  'user_id' => 'CCD03949-6B2E-4D20-BE18-D62F9E04789D',
+  'apns_token' => '4d67a3866292dc15439a7f054a8dfd7507e5f06dd77c6ddaa6c372092208c86b',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+  'devicetype' => 'tablet',
+)
+2015-12-07 23:07:55 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 23:07:55 - DEBUG --> Saving 4d67a3866292dc15439a7f054a8dfd7507e5f06dd77c6ddaa6c372092208c86b in the APNS tokens database
+2015-12-07 23:08:43 - INFO --> 
+2015-12-07 23:08:43 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 23:08:43 - INFO --> /taddlecreek/post_apns_token.php
+2015-12-07 23:08:43 - INFO --> GET array (
+)
+2015-12-07 23:08:43 - INFO --> POST array (
+  'environment' => 'debug',
+  'user_id' => 'CCD03949-6B2E-4D20-BE18-D62F9E04789D',
+  'apns_token' => '4d67a3866292dc15439a7f054a8dfd7507e5f06dd77c6ddaa6c372092208c86b',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+  'devicetype' => 'tablet',
+)
+2015-12-07 23:08:43 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 23:08:43 - DEBUG --> Saving 4d67a3866292dc15439a7f054a8dfd7507e5f06dd77c6ddaa6c372092208c86b in the APNS tokens database
+2015-12-07 23:08:44 - INFO --> 
+2015-12-07 23:08:44 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 23:08:44 - INFO --> /taddlecreek/purchases.php?environment=debug&user_id=CCD03949-6B2E-4D20-BE18-D62F9E04789D&app_id=com.taddlecreekmag.taddlecreek&devicetype=tablet
+2015-12-07 23:08:44 - INFO --> GET array (
+  'environment' => 'debug',
+  'user_id' => 'CCD03949-6B2E-4D20-BE18-D62F9E04789D',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+  'devicetype' => 'tablet',
+)
+2015-12-07 23:08:44 - INFO --> POST array (
+)
+2015-12-07 23:08:44 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 23:15:09 - INFO --> 
+2015-12-07 23:15:09 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 23:15:09 - INFO --> /taddlecreek/post_apns_token.php
+2015-12-07 23:15:09 - INFO --> GET array (
+)
+2015-12-07 23:15:09 - INFO --> POST array (
+  'environment' => 'debug',
+  'user_id' => 'CCD03949-6B2E-4D20-BE18-D62F9E04789D',
+  'apns_token' => '4d67a3866292dc15439a7f054a8dfd7507e5f06dd77c6ddaa6c372092208c86b',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+  'devicetype' => 'tablet',
+)
+2015-12-07 23:15:09 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2015-12-07 23:15:09 - DEBUG --> Saving 4d67a3866292dc15439a7f054a8dfd7507e5f06dd77c6ddaa6c372092208c86b in the APNS tokens database
+2015-12-07 23:15:11 - INFO --> 
+2015-12-07 23:15:11 - INFO --> ===vvv=============== Received request ================vvv===
+2015-12-07 23:15:11 - INFO --> /taddlecreek/purchases.php?environment=debug&user_id=CCD03949-6B2E-4D20-BE18-D62F9E04789D&app_id=com.taddlecreekmag.taddlecreek&devicetype=tablet
+2015-12-07 23:15:11 - INFO --> GET array (
+  'environment' => 'debug',
+  'user_id' => 'CCD03949-6B2E-4D20-BE18-D62F9E04789D',
+  'app_id' => 'com.taddlecreekmag.taddlecreek',
+  'devicetype' => 'tablet',
+)
+2015-12-07 23:15:11 - INFO --> POST array (
+)
+2015-12-07 23:15:11 - INFO --> ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

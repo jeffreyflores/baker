@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20CC551D16AD346900DEFB5C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20CC551F16AD346900DEFB5C /* Localizable.strings */; };
+		2A7423E4EF0FAF9E2B098EA0 /* libPods-TaddleCreek.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C72178541292B68B08AF4EF3 /* libPods-TaddleCreek.a */; };
 		85BCAA5E1C15322E0095D343 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85BCAA5D1C15322E0095D343 /* FontAwesome.ttf */; };
 		904033901A10FF230035071A /* BKRShelfViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9040338F1A10FF230035071A /* BKRShelfViewLayout.m */; };
 		904C31E71A12645C00E53E66 /* BKRCategoryFilterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 904C31E61A12645C00E53E66 /* BKRCategoryFilterItem.m */; };
@@ -69,6 +70,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FEFD28D2D9380826F11BB54 /* Pods-TaddleCreek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaddleCreek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaddleCreek/Pods-TaddleCreek.debug.xcconfig"; sourceTree = "<group>"; };
 		20CC551E16AD346900DEFB5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		852DC7AF1C14F46D00E51C8E /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		85BCAA5D1C15322E0095D343 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = Baker/FontAwesome.ttf; sourceTree = "<group>"; };
@@ -174,6 +176,8 @@
 		C66857A31A07DDBE00776443 /* NSObject+BakerExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BakerExtensions.m"; sourceTree = "<group>"; };
 		C6F4FB971A0E6D9100E365F6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		C6F4FB981A0E6D9100E365F6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		C72178541292B68B08AF4EF3 /* libPods-TaddleCreek.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaddleCreek.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1638316D5F0615176215DCD /* Pods-TaddleCreek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaddleCreek.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaddleCreek/Pods-TaddleCreek.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,12 +195,22 @@
 				9F55576815B4C6C3003072A3 /* QuartzCore.framework in Frameworks */,
 				AB40048115B4B90200D87E2A /* MessageUI.framework in Frameworks */,
 				AB40048315B4B90A00D87E2A /* libz.dylib in Frameworks */,
+				2A7423E4EF0FAF9E2B098EA0 /* libPods-TaddleCreek.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CF082B0A8A438E14124AD5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FEFD28D2D9380826F11BB54 /* Pods-TaddleCreek.debug.xcconfig */,
+				E1638316D5F0615176215DCD /* Pods-TaddleCreek.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		904C31E41A12645C00E53E66 /* BakerComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +348,7 @@
 				ABAFB58A15AB9A2E002FA498 /* Frameworks */,
 				ABAFB58815AB9A2E002FA498 /* Products */,
 				904C31E41A12645C00E53E66 /* BakerComponents */,
+				7CF082B0A8A438E14124AD5E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -358,6 +373,7 @@
 				9F55576515B4C6B7003072A3 /* QuartzCore.framework */,
 				AB40048015B4B90200D87E2A /* MessageUI.framework */,
 				AB40048215B4B90A00D87E2A /* libz.dylib */,
+				C72178541292B68B08AF4EF3 /* libPods-TaddleCreek.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -411,9 +427,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABAFB5B415AB9A2F002FA498 /* Build configuration list for PBXNativeTarget "TaddleCreek" */;
 			buildPhases = (
+				C91F763F39FE7290B0704B50 /* [CP] Check Pods Manifest.lock */,
 				ABAFB58315AB9A2E002FA498 /* Sources */,
 				ABAFB58415AB9A2E002FA498 /* Frameworks */,
 				ABAFB58515AB9A2E002FA498 /* Resources */,
+				5A49F78BAF7B7FB5F98836E4 /* [CP] Embed Pods Frameworks */,
+				A9271EAEF4A6A952BE35C00B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -472,6 +491,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A49F78BAF7B7FB5F98836E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaddleCreek/Pods-TaddleCreek-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9271EAEF4A6A952BE35C00B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaddleCreek/Pods-TaddleCreek-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C91F763F39FE7290B0704B50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABAFB58315AB9A2E002FA498 /* Sources */ = {
@@ -608,6 +675,7 @@
 		};
 		ABAFB5B515AB9A2F002FA498 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FEFD28D2D9380826F11BB54 /* Pods-TaddleCreek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -630,6 +698,7 @@
 		};
 		ABAFB5B615AB9A2F002FA498 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1638316D5F0615176215DCD /* Pods-TaddleCreek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
