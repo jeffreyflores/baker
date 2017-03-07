@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		20CC551D16AD346900DEFB5C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20CC551F16AD346900DEFB5C /* Localizable.strings */; };
 		2A7423E4EF0FAF9E2B098EA0 /* libPods-TaddleCreek.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C72178541292B68B08AF4EF3 /* libPods-TaddleCreek.a */; };
+		8548B8301E6E4C380096A2E9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8548B82F1E6E4C380096A2E9 /* libsqlite3.tbd */; };
 		85BCAA5E1C15322E0095D343 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85BCAA5D1C15322E0095D343 /* FontAwesome.ttf */; };
 		904033901A10FF230035071A /* BKRShelfViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9040338F1A10FF230035071A /* BKRShelfViewLayout.m */; };
 		904C31E71A12645C00E53E66 /* BKRCategoryFilterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 904C31E61A12645C00E53E66 /* BKRCategoryFilterItem.m */; };
@@ -73,6 +74,7 @@
 		1FEFD28D2D9380826F11BB54 /* Pods-TaddleCreek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaddleCreek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaddleCreek/Pods-TaddleCreek.debug.xcconfig"; sourceTree = "<group>"; };
 		20CC551E16AD346900DEFB5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		852DC7AF1C14F46D00E51C8E /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		8548B82F1E6E4C380096A2E9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		85BCAA5D1C15322E0095D343 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = Baker/FontAwesome.ttf; sourceTree = "<group>"; };
 		9040338E1A10FF230035071A /* BKRShelfViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKRShelfViewLayout.h; sourceTree = "<group>"; };
 		9040338F1A10FF230035071A /* BKRShelfViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKRShelfViewLayout.m; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8548B8301E6E4C380096A2E9 /* libsqlite3.tbd in Frameworks */,
 				AB67F5BC16EE9B79005A04F6 /* SystemConfiguration.framework in Frameworks */,
 				ABD245531639E3650080F056 /* AVFoundation.framework in Frameworks */,
 				ABABF1A81646C06100A75E67 /* StoreKit.framework in Frameworks */,
@@ -363,6 +366,7 @@
 		ABAFB58A15AB9A2E002FA498 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8548B82F1E6E4C380096A2E9 /* libsqlite3.tbd */,
 				AB67F5BB16EE9B79005A04F6 /* SystemConfiguration.framework */,
 				ABABF1A51646C04D00A75E67 /* StoreKit.framework */,
 				ABD245521639E3650080F056 /* AVFoundation.framework */,
