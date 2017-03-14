@@ -9,8 +9,8 @@ $( document ).ready(function() {
 	    if(subscriber_number){	
 		    $.post("http://jeffreyabelflores.com/taddlecreek/info/submit.php", {subscriber_number: subscriber_number},
 		    function(data) {
-		    	if( data === 'success'){
-		    		var error_msg = "<div id='error-dialog' class='dialog-container'><div class='black-bg'></div><div class='vert-fix'><div class='dialog'><div class='message'>Thanks for signing in! Please enjoy the app.</div><div class='errorbuttons close-button'>OK</div></div></div></div>";
+		    	if( data === 'fail'){
+			    	var error_msg = "<div id='error-dialog' class='dialog-container'><div class='black-bg'></div><div class='vert-fix'><div class='dialog'><div class='message'>Sorry, that user was not found in our subscription list.</div><div class='errorbuttons close-button'>OK</div></div></div></div>";
 					$("#response").append(error_msg);
 					$(".close-button").on('click', function(){
 						$("#error-dialog").addClass("dialog-close");
@@ -30,8 +30,9 @@ $( document ).ready(function() {
 						}, 500);
 					});
 				}else{
-			    	var error_msg = "<div id='error-dialog' class='dialog-container'><div class='black-bg'></div><div class='vert-fix'><div class='dialog'><div class='message'>Sorry, that user was not found in our subscription list.</div><div class='errorbuttons close-button'>OK</div></div></div></div>";
+					var error_msg = "<div id='error-dialog' class='dialog-container'><div class='black-bg'></div><div class='vert-fix'><div class='dialog'><div class='message'>Thanks for signing in! Please enjoy the app.</div><div class='errorbuttons close-button'>OK</div></div></div></div>";
 					$("#response").append(error_msg);
+					locationChange(data);
 					$(".close-button").on('click', function(){
 						$("#error-dialog").addClass("dialog-close");
 						$("#submit-button").removeAttr("disabled");
@@ -54,4 +55,13 @@ $( document ).ready(function() {
 	    }
 		
 	});
+	//iOS connection functions
+    function getText()
+    {
+        return document.getElementById('txtinput').value;
+    }
+    function locationChange(data)
+    {
+        window.location = 'ios:' + data;
+    }
 });

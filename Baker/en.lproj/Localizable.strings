@@ -69,10 +69,10 @@
 "OPENING_TEXT" = "LOADING...";
 "BUYING_TEXT" = "BUYING...";
 "RETRIEVING_TEXT" = "UPDATING PRICE...";
-"INFO_TEXT" = "\Uf013";//INFO BUTTON
+"INFO_TEXT" = "\Uf013";//INFO BUTTON [GEAR]
 
 // Issue states
-"FREE_TEXT" = "\Uf0ed";//FREE
+"FREE_TEXT" = "\Uf0ed";//FREE [CLOUD]
 "PURCHASED_TEXT" = "PURCHASED";
 
 // Archiving alert

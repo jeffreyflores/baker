@@ -63,7 +63,10 @@
 - (id)init {
     self = [super init];
     if (self) {
-        
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        NSString *customManifestURL = [prefs stringForKey:@"customManifestURL"];
+        NSString *customManifestURL_iphone = [prefs stringForKey:@"customManifestURL_iphone"];
+
         NSString *settingsPath = [[NSBundle mainBundle] pathForResource:@"settings" ofType:@"plist"];
         if ([[NSFileManager defaultManager] fileExistsAtPath:settingsPath]) {
             _settings = [NSDictionary dictionaryWithContentsOfFile:settingsPath];
@@ -77,8 +80,8 @@
         _isNewsstand                         = [self boolSettingForKey:@"isNewsstand" withDefault:YES];
         _newsstandLatestIssueCover           = [self boolSettingForKey:@"newsstandLatestIssueCover" withDefault:YES];
         
-        _newsstandManifestUrl                = [self stringSettingForKey:@"newsstandManifestUrl" withDefault:@"http://bakerframework.com/demo/shelf.json"];
-        _newsstandManifestUrlIphone          = [self stringSettingForKey:@"newsstandManifestUrlIphone" withDefault:@"http://bakerframework.com/demo/shelf.json"];
+        _newsstandManifestUrl                = customManifestURL;
+        _newsstandManifestUrlIphone          = customManifestURL_iphone;
         _purchaseConfirmationUrl             = [self stringSettingForKey:@"purchaseConfirmationUrl" withDefault:@""];
         _purchasesUrl                        = [self stringSettingForKey:@"purchasesUrl" withDefault:@""];
         _postApnsTokenUrl                    = [self stringSettingForKey:@"postApnsTokenUrl" withDefault:@""];

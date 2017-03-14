@@ -392,6 +392,7 @@
         self.loadingLabel.hidden  = NO;
         self.progressBar.hidden   = YES;
     } else if ([status isEqualToString:@"purchasable"]) {
+        //[self.actionButton setTitle:self.issue.price forState:UIControlStateNormal];
         [self.actionButton setTitle:NSLocalizedString(@"ACTION_BUY_TEXT", nil) forState:UIControlStateNormal];
         [self.spinner stopAnimating];
 

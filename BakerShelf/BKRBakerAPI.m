@@ -258,10 +258,14 @@
 }
 
 - (NSURL*)manifestURL {
-    if ([BKRSettings sharedSettings].isNewsstand && [BKRSettings sharedSettings].newsstandManifestUrl.length > 0 && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        return [NSURL URLWithString:[BKRSettings sharedSettings].newsstandManifestUrl];
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    NSString *customManifestURL = [prefs stringForKey:@"customManifestURL"];
+    NSString *customManifestURL_iphone = [prefs stringForKey:@"customManifestURL_iphone"];
+    if ([BKRSettings sharedSettings].isNewsstand && customManifestURL.length > 0 && UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        return [NSURL URLWithString:customManifestURL];
+;
     }else{
-    	return [NSURL URLWithString:[BKRSettings sharedSettings].newsstandManifestUrlIphone];
+        return [NSURL URLWithString:customManifestURL_iphone];
     }
     return nil;
 }

@@ -871,4 +871,23 @@
     return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
 }
 
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    if ([[[request URL] absoluteString] hasPrefix:@"ios:"]) {
+        NSString *fullURLString =  [[request URL] absoluteString];
+        NSString *URLMessage = [[fullURLString componentsSeparatedByString:@":"] lastObject];
+ 
+        NSLog(@"Got request! %@", URLMessage);
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        [prefs setObject:@"http://jeffreyabelflores.com/taddlecreek/shelf_free.json" forKey:@"customManifestURL"];
+        [prefs setObject:@"http://jeffreyabelflores.com/taddlecreek/shelf_iphone_free.json" forKey:@"customManifestURL_iphone"];
+        [prefs synchronize];
+        NSLog(@"%@", [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]);
+
+        // Cancel the location change
+        return NO;
+    }
+    return YES;
+}
+
 @end

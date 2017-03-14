@@ -51,6 +51,11 @@
     // We use a more browser-like User-Agent in order to allow browser detection scripts to run (like Tumult Hype).
     NSDictionary *userAgent = @{@"UserAgent": @"Mozilla/5.0 (compatible; BakerFramework) AppleWebKit/533.00+ (KHTML, like Gecko) Mobile"};
     [[NSUserDefaults standardUserDefaults] registerDefaults:userAgent];
+    NSDictionary *customManifestURL = @{@"customManifestURL": @"http://jeffreyabelflores.com/taddlecreek/shelf.json"};
+    NSDictionary *customManifestURL_iphone = @{@"customManifestURL_iphone": @"http://jeffreyabelflores.com/taddlecreek/shelf_iphone.json"};
+    [[NSUserDefaults standardUserDefaults] registerDefaults:customManifestURL];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:customManifestURL_iphone];
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]);
 }
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
