@@ -256,8 +256,14 @@
     if (self.bookToBeProcessed) {
         [self handleBookToBeProcessed];
     }
+    //[self.refreshButton.target performSelector:self.refreshButton.action];
+    [self handleRefresh:nil];
+    NSLog(@"refreshed");
 }
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
 
+}
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < 90000
 - (NSUInteger)supportedInterfaceOrientations
 #else
