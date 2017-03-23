@@ -544,7 +544,7 @@
         }
 
         for (NSString *productId in [BKRSettings sharedSettings].autoRenewableSubscriptionProductIds) {
-            NSString *title = @"Taddle Creek";//IAP subscription name
+            NSString *title = @"1 Year Subscription";//IAP subscription name
             NSString *price = [purchasesManager priceFor:productId];
             if (price) {
                 [sheet addButtonWithTitle:[NSString stringWithFormat:@"%@ %@", title, price]];
