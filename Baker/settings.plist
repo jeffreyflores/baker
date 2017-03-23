@@ -24,7 +24,7 @@
 	<string>http://jeffreyabelflores.com/taddlecreek/post_apns_token.php</string>
 	<key>autoRenewableSubscriptionProductIds</key>
 	<array>
-		<string>com.taddlecreekmag.taddlecreek.oneYear</string>
+		<string>com.taddlecreekmag.taddlecreek.oneYearAutoRenewable</string>
 	</array>
 	<key>requestTimeout</key>
 	<integer>15</integer>
